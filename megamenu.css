@@ -4,7 +4,7 @@
 }
 
 header{
-    background-color: #2ecc71;
+    background-color: #bdc3c7;
 }
 nav ul{
     text-align: center;
@@ -31,6 +31,9 @@ nav ul li a:hover{
     background-color: #27ae60;
 }
 
+nav ul li:hover > a{
+    background-color: #ecf0f1;
+}
 /* Mega MEnu Design */
 
 nav ul li{
@@ -41,7 +44,7 @@ nav ul li ul{
     top: 100%;
     left: 0;
     width: 200px;
-    background-color: #2ecc71;
+    background-color: #bdc3c7;
 }
 nav ul li ul li {
    border-top: 1px solid white;
@@ -57,8 +60,14 @@ nav ul li ul li a{
 
 /* hover style css */
 nav ul li ul{
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: scaleY(0);
+    transform-origin: top center;
 }
 nav ul li:hover ul{
-    display: block;
+     opacity: 1;
+     visibility: visible;
+     transform: scaleY(1);
 }
