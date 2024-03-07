@@ -78,6 +78,7 @@
     visibility: hidden;
     transition: .5s;
     opacity: 0;
+    
 }
 
 .card_content h1 {
@@ -92,4 +93,63 @@
     width: 100%;
     height: 100%;
     border-radius: 7px;
+}
+
+.main_menu{
+    background-color: skyblue;
+    width: 1024px;
+    margin: 50px auto;
+    text-align: center;
+    
+}
+.main_menu ul{
+    display: flex;
+}
+.main_menu ul li{
+    list-style: none;
+}
+.main_menu ul li:first-child a{
+    border-left: 1px solid #ddd;
+}
+.main_menu ul li a{
+    text-decoration: none;
+    display:  block;
+    padding: 10px 20px ;
+    font-size: 20px;
+    border-right: 2px solid white;
+   color:black;font-weight: bold;
+}
+.main_menu ul li a:hover{
+    background-color: #3498db;
+}
+
+/* DropDowen Menu  */
+
+.main_menu ul li{
+    position: relative;
+}
+
+.main_menu ul li .mega_menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    display: block;
+    background-color: skyblue;
+   visibility: hidden;
+   transition: .5s;
+}
+
+.main_menu ul li .mega_menu li{
+    border-top: 1px solid white;
+}
+.main_menu ul li .mega_menu li a{
+    display: block;
+    text-align: left;
+}
+
+
+/* Hover Part */
+.main_menu ul li:hover .mega_menu {
+   visibility: visible;
 }
